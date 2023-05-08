@@ -15,6 +15,9 @@
     --color5: #FEFEFE;
     --active: #1a4031;
 }
+body{
+    background-color: var(--color1);
+}
 main{
     display: flex;
     flex-direction: column;
@@ -149,7 +152,7 @@ button a, i{
         display: none;
     }
     .price{
-        padding: 2em 0 0 0;
+        padding: 0 0 0 0;
         gap: 1.5em;
     }
     .text2{
@@ -158,6 +161,7 @@ button a, i{
     .text1 h1{
         font-size: 1.8em;
     }
+    
         
 
 
