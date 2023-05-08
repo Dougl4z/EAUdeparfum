@@ -53,21 +53,24 @@ main{
     width: 21em;
     height:15em ;
 }
-h1, span{
+.titulo{
+    
+}
+.titulo, span{
     font-family: var(--font2);
 }
 h5, p{
     font-family: var(--font1);
     color: var(--color3);
 }
-article, .price, .plus, button, .text1{
+article, .price, .plus, .btn, .text1{
     display: flex;
 }
 .text1{
     flex-direction: column;
-    gap: 0.8em;
+    gap: em;
     color: var(--color4);
-    width: 12em;
+    width: 15em;
 }
 .text2 p{
     padding: 1em 0 0 0;
@@ -85,15 +88,15 @@ article{
     width: 18.4em;
     height: 20em;
     background-color: var(--color5);
-    padding: 1.5em;
+    padding: .5em;
 }
 .price{
     flex-direction: column;
     padding: 2em 0 0 0;
     gap: 0.5em;
 }
-button{
-    width:18.4em ;
+.btn{
+    width:15.4em ;
     height:3em ;
     background-color: var(--color2);
     border: none;
@@ -104,10 +107,10 @@ button{
     transition: all 0.5s ease;
     cursor: pointer;
 }
-button:hover{
+.btn:hover{
     background-color: var(--active);
 }
-button a, i{
+.btn a, i{
     color: var(--color5);
     padding: 0.8em;
 }
@@ -124,9 +127,10 @@ button a, i{
 }
 
 @media (min-width: 1024px) {
+   
    main{
     width: 100%;
-    height: 28.85em;
+    height: 100vh;
    }
     .container{
         display: grid;
@@ -147,19 +151,29 @@ button a, i{
         border-bottom-left-radius: inherit;
         overflow: hidden;
     }
+    section{
+        padding: 1em;
+        gap: 1em;
+    }
    
     .img{
         display: none;
     }
     .price{
-        padding: 0 0 0 0;
-        gap: 1.5em;
+        padding: 2em 0 0 0;
+        gap: 2em;
+    }
+    .text1{
+        display: flex;
+        gap: 1em;
     }
     .text2{
         padding: 1em 0 0 0;
     }
-    .text1 h1{
-        font-size: 1.8em;
+    
+    .titulo{
+        font-size: 2em;
+        line-height: 1;
     }
     
         
