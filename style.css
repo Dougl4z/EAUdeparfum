@@ -16,6 +16,11 @@
     --active: #1a4031;
 }
 body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color1);
 }
 main{
@@ -29,21 +34,21 @@ main{
 }
 .container{
     display: grid;
-    
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
+    
 .content1{
     width:100%;
     height:15em ;
-    
 }
+    
 .content2{
     display: grid;
     justify-content: center;
     background-color: var(--color5);
     width:100%;
-    height: 23em;
+    height: 22em;
     border-bottom-left-radius: 0.6em;
     border-bottom-right-radius: 0.6em;
 }
@@ -53,9 +58,7 @@ main{
     width: 21em;
     height:15em ;
 }
-.titulo{
-    
-}
+
 .titulo, span{
     font-family: var(--font2);
 }
@@ -68,27 +71,31 @@ article, .price, .plus, .btn, .text1{
 }
 .text1{
     flex-direction: column;
-    gap: em;
+    
     color: var(--color4);
     width: 15em;
 }
 .text2 p{
     padding: 1em 0 0 0;
-    font-size: 0.8em;
-    line-height: 2;
+    font-size: 0.9em;
+    line-height: 1.5;
     text-align: left;
 }
+   
 h5{
     font-size: 0.7em;
     letter-spacing: 0.5em;
+    padding: 0 0 1em 0;
     font-weight: 100;
 }
 article{
+    padding: 2em 0 0 0;
+    justify-content: center;
     flex-direction: column;
     width: 18.4em;
     height: 20em;
     background-color: var(--color5);
-    padding: .5em;
+    
 }
 .price{
     flex-direction: column;
@@ -96,7 +103,7 @@ article{
     gap: 0.5em;
 }
 .btn{
-    width:15.4em ;
+    width:100% ;
     height:3em ;
     background-color: var(--color2);
     border: none;
@@ -112,7 +119,7 @@ article{
 }
 .btn a, i{
     color: var(--color5);
-    padding: 0.8em;
+    padding: 0.5em;
 }
 .plus{
     gap: 1em;
@@ -145,23 +152,25 @@ article{
         background-size: cover;
     }
     .content2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 28em;
+        width: 20em;
         border-top-right-radius: .6em;
         border-bottom-right-radius: .6em;
         border-bottom-left-radius: inherit;
         overflow: hidden;
     }
-    section{
-        padding: 1em;
-        gap: 1em;
+    article{
+        padding: 2em;
     }
-   
     .img{
         display: none;
     }
     .price{
         padding: 2em 0 0 0;
-        gap: 2em;
+        gap: 1.5em;
     }
     .text1{
         display: flex;
@@ -170,11 +179,16 @@ article{
     .text2{
         padding: 1em 0 0 0;
     }
-    
     .titulo{
         font-size: 2em;
         line-height: 1;
     }
+    
+    
+        
+        
+        
+   
     
         
 
